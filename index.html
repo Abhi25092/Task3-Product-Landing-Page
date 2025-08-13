@@ -1,0 +1,402 @@
+<!-- Product Landing Page -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"Microsoft.QuickAction.WiFi
+      content="Product Landing Page for showcasing a product, highlighting features, and encouraging conversions."
+    />
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- TAILWIND CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- HEADER SECTION -->
+    <header
+      class="bg-gradient-to-r from-blue-500 to-indigo-600 shadow-md fixed w-full z-50"
+    >
+      <div
+        class="container mx-auto flex flex-wrap justify-between items-center py-4 px-4 md:px-6"
+      >
+        <!-- Logo -->
+        <div class="flex items-center space-x-2 mb-2 md:mb-0">
+          <img src="logo.png" alt="Company Logo" class="h-10" />
+          <span class="text-white font-bold text-lg md:text-xl"
+            >Company Name</span
+          >
+        </div>
+
+        <!-- Navigation Links -->
+        <nav>
+          <ul class="flex space-x-8">
+            <li>
+              <a href="#features" class="nav-link text-white"
+                >Features</a
+              >
+            </li>
+            <li>
+              <a href="#testimonials" class="nav-link text-white"
+                >Testimonials
+              </a>
+            </li>
+            <li><a href="#pricing" class="nav-link text-white">Pricing</a></li>
+            <li><a href="#contact" class="nav-link text-white">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section
+      class="relative bg-gradient-to-t from-indigo-600 via-purple-600 to-pink-500 text-white pt-32 pb-20 overflow-hidden"
+    >
+      <div
+        class="container mx-auto flex flex-col md:flex-row items-center px-6 md:space-x-12"
+      >
+        <!-- Left: Text Content -->
+        <div class="md:w-1/2 text-center md:text-left">
+          <h1 class="text-4xl md:text-5xl font-extrabold mb-4 animate-fadeIn">
+            Experience Sound Like Never Before
+          </h1>
+          <p class="text-lg mb-6 animate-fadeIn delay-200">
+            Premium Wireless Earbuds with Noise Cancellation & 30-Hour Battery
+            Life.
+          </p>
+          <button
+            id="openModal"
+            class="bg-white text-blue-700 px-8 py-3 rounded-full text-lg font-semibold hover:bg-gray-300 shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 animate-fadeIn delay-400"
+          >
+            Get Yours Now
+          </button>
+        </div>
+
+        <!-- Right: Product Image -->
+        <div
+          class="md:w-1/2 flex justify-center mt-10 md:mt-0 animate-fadeIn delay-600"
+        >
+          <img
+            src="product.png"
+            alt="Product Image"
+            class="max-w-xs md:max-w-md rounded-lg shadow-2xl transform hover:-translate-y-2 transition duration-500"
+          />
+        </div>
+      </div>
+
+      <!-- Decorative Pattern -->
+      <div
+        class="absolute inset-0 bg-[url('pattern.png')] opacity-10 pointer-events-none"
+      ></div>
+    </section>
+
+    <!-- FEATURES SECTION -->
+    <section
+      id="features"
+      class="relative bg-gradient-to-r from-gray-100 py-20"
+    >
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">
+          Why Choose Our Product?
+        </h2>
+
+        <div class="grid md:grid-cols-3 gap-10">
+          <!-- Feature 1 -->
+          <div
+            class="feature-card p-6 rounded-xl shadow-lg bg-white/70 backdrop-blur-md text-center transform hover:-translate-y-2 transition duration-300 hover:shadow-2xl animate-fadeIn"
+          >
+            <div
+              class="mx-auto w-16 h-16 rounded-full bg-gradient-to-r from-blue-500 to-indigo-500 flex items-center justify-center mb-4 shadow-lg"
+            >
+              <img src="feature1.png" alt="Feature 1" class="w-8 h-8" />
+            </div>
+            <h3 class="font-semibold text-xl mb-2">Crystal Clear Audio</h3>
+            <p class="text-gray-600">
+              Enjoy deep bass and crisp treble for every song, movie, or call.
+            </p>
+          </div>
+
+          <!-- Feature 2 -->
+          <div
+            class="feature-card p-6 rounded-xl shadow-lg bg-white/70 backdrop-blur-md text-center transform hover:-translate-y-2 transition duration-300 hover:shadow-2xl animate-fadeIn"
+          >
+            <div
+              class="mx-auto w-16 h-16 rounded-full bg-gradient-to-r from-indigo-500 to-purple-500 flex items-center justify-center mb-4 shadow-lg"
+            >
+              <img src="feature2.png" alt="Feature 2" class="w-8 h-8" />
+            </div>
+            <h3 class="font-semibold text-xl mb-2">
+              Active Noise Cancellation
+            </h3>
+            <p class="text-gray-600">
+              Block out unwanted background noise for total immersion.
+            </p>
+          </div>
+
+          <!-- Feature 3 -->
+          <div
+            class="feature-card p-6 rounded-xl shadow-lg bg-white/70 backdrop-blur-md text-center transform hover:-translate-y-2 transition duration-300 hover:shadow-2xl animate-fadeIn"
+          >
+            <div
+              class="mx-auto w-16 h-16 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center mb-4 shadow-lg"
+            >
+              <img src="feature3.png" alt="Feature 3" class="w-8 h-8" />
+            </div>
+            <h3 class="font-semibold text-xl mb-2">30-Hour Battery Life</h3>
+            <p class="text-gray-600">
+              Listen all-day with up to 6 hours on a single charge + charging
+              case.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section
+      id="testimonials"
+      class="relative bg-gradient-to-r from-blue-50 via-indigo-50 to-purple-50 py-20"
+    >
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">
+          What Our Customers Say?
+        </h2>
+
+        <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-10">
+          <!-- Testimonial 1 -->
+          <div
+            class="testimonial-card p-6 rounded-xl bg-white/80 backdrop-blur-md shadow-lg transform hover:-translate-y-2 transition duration-300 hover:shadow-2xl animate-fadeIn"
+          >
+            <p class="mb-4 text-gray-700">
+              "These earbuds completely changed my commute. The noise
+              cancellation is incredible!"
+            </p>
+            <div class="flex items-center space-x-4">
+              <img
+                src="user1.jpg"
+                alt="User 1"
+                class="w-14 h-14 rounded-full border-2 border-blue-500 shadow-md object-cover"
+              />
+              <div>
+                <h4 class="font-semibold text-lg">Priya Sharma</h4>
+                <span class="text-yellow-400"
+                  >&starf;&starf;&starf;&starf;&starf;</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div
+            class="testimonial-card p-6 rounded-xl bg-white/80 backdrop-blur-md shadow-lg transform hover:-translate-y-2 transition duration-300 hover:shadow-2xl animate-fadeIn delay-200"
+          >
+            <p class="mb-4 text-gray-700">
+              "Super comfortable and the sound quality is mind blowing. Worth
+              every rupee."
+            </p>
+            <div class="flex items-center space-x-4">
+              <img
+                src="user2.jpg"
+                alt="User 2"
+                class="w-14 h-14 rounded-full border-2 border-indigo-500 shadow-md object-cover"
+              />
+              <div>
+                <h4 class="font-semibold text-lg">Rohit Verma</h4>
+                <span class="text-yellow-400"
+                  >&starf;&starf;&starf;&starf;&starf;</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING SECTION -->
+    <section
+      id="pricing"
+      class="relative bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 py-20 text-white"
+    >
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold mb-4">Get Yours Today</h2>
+        <p class="mb-10 text-lg text-purple-100">
+          Experience crystal-clear audio and ultimate comfort with our Smart
+          Wireless Earbuds.
+        </p>
+
+        <div
+          class="max-w-sm mx-auto bg-white/10 backdrop-blur-md p-8 rounded-2xl shadow-xl border border-white/20 animate-fadeIn"
+        >
+          <h3 class="text-2xl font-semibold mb-4">Premium Wireless Earbuds</h3>
+          <p class="text-5xl font-extrabold mb-8">Rs. 3,499</p>
+
+          <ul class="text-left mb-8 space-y-3">
+            <li class="flex items-center">
+              <span class="text-green-300 mr-2">&check;</span> Active Noise
+              Cancellation
+            </li>
+            <li class="flex items-center">
+              <span class="text-green-300 mr-2">&check;</span> Wireless Charging
+              Case
+            </li>
+            <li class="flex items-center">
+              <span class="text-green-300 mr-2">&check;</span> Sweat & Water
+              Resistant
+            </li>
+            <li class="flex items-center">
+              <span class="text-green-300 mr-2">&check;</span> 1-Year Warranty
+            </li>
+          </ul>
+
+          <a
+            href="#buy-now"
+            class="inline-block bg-white text-indigo-700 px-8 py-3 rounded-full text-lg font-semibold shadow-lg hover:shadow-2xl hover:scale-105 transform transition duration-300"
+          >
+            Buy Now
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer
+      id="contact"
+      class="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-gray-300 py-12"
+    >
+      <div class="container mx-auto px-6 grid md:grid-cols-3 gap-8 mb-8">
+        <!-- About -->
+        <div>
+          <h3 class="text-xl font-bold mb-4 text-white">About Us</h3>
+          <p class="text-gray-400 leading-relaxed">
+            We create premium audio experiences with cutting-edge technology and
+            elegant design.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h3 class="text-xl font-bold mb-4 text-white">Quick Links</h3>
+          <ul class="space-y-2">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#buy-now">Buy Now</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div>
+          <h3 class="text-xl font-bold mb-4 text-white">Contact Us</h3>
+          <p>
+            Email:
+            <a
+              href="mailto: abhishekmgs4318@gmail.com"
+              target="_blank"
+              class="hover:text-white"
+              >abhishekmgs4318@gmail.com</a
+            >
+          </p>
+          <p>Phone: +91 91152 71610</p>
+          <div class="flex space-x-4 mt-4">
+            <a href="#" class="text-gray-400 hover:text-white transition"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" class="text-gray-400 hover:text-white transition"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a href="#" class="text-gray-400 hover:text-white transition"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" class="text-gray-400 hover:text-white transition"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Divider -->
+      <div class="border-t border-gray-700 text-center pt-6">
+        <p class="text-gray-500 text-sm">
+          &copy; 2025 Company Name | All Rights Reserved
+        </p>
+      </div>
+    </footer>
+
+    <!-- MODAL (SIGNUP FORM) -->
+    <div
+      id="modal"
+      class="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-300"
+    >
+      <!-- Modal Box -->
+      <div
+        class="bg-white/90 backdrop-blur-md p-8 rounded-2xl shadow-2xl w-full max-w-md transform scale-90 transition-transform duration-300"
+      >
+        <!-- Close Button -->
+        <button
+          id="closeModal"
+          class="absolute top-4 right-4 w-6 h-6 rounded-full bg-gradient-to-r from-red-500 to-pink-500 text-white flex items-center justify-center shadow-lg hover:shadow-xl transform hover:scale-110 transition-all duration-300"
+        >
+          <i class="fas fa-times text-sm"></i>
+        </button>
+
+        <!-- Title -->
+        <h2 class="text-2xl font-bold text-center mb-6 text-gray-800">
+          Sign Up
+        </h2>
+
+        <!-- Form -->
+        <form>
+          <div class="mb-4">
+            <label class="block text-gray-700 mb-1">Full Name</label>
+            <div class="flex items-center bg-white rounded-lg shadow px-3">
+              <i class="fas fa-user text-gray-400 mr-2"></i>
+              <input
+                type="text"
+                class="w-full p-2 bg-transparent focus:outline-none"
+                placeholder="Enter your name"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="mb-4">
+            <label class="block text-gray-700 mb-1">Email Address</label>
+            <div class="flex items-center bg-white rounded-lg shadow px-3">
+              <i class="fas fa-envelope text-gray-400 mr-2"></i>
+              <input
+                type="email"
+                class="w-full p-2 bg-transparent focus:outline-none"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="mb-6">
+            <label class="block text-gray-700 mb-1">Password</label>
+            <div class="flex items-center bg-white rounded-lg shadow px-3">
+              <i class="fas fa-lock text-gray-400 mr-2"></i>
+              <input
+                type="password"
+                class="w-full p-2 bg-transparent focus:outline-none"
+                placeholder="Enter your password"
+                required
+              />
+            </div>
+          </div>
+
+          <!-- Submit Button -->
+          <button
+            type="submit"
+            class="w-full bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-3 rounded-lg font-semibold shadow-lg hover:shadow-2xl transform hover:scale-105 transition duration-300"
+          >
+            Create Account
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
