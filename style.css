@@ -63,10 +63,3 @@ html {
 #modal.active .max-w-md {
     transform: scale(1);
 }
-
-/* #modal {
-    display: none;
-}
-#modal.active {
-    display: flex;
-} */
